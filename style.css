@@ -66,6 +66,10 @@ form {
 .block label {
     text-transform: uppercase;
     font-weight: 600;
+    color: rgb(137, 137, 137);
+    text-align: left;
+    font-size: small;
+    padding-bottom: 7px;
 }
 
 input {
@@ -108,6 +112,7 @@ input::placeholder {
     font-weight: 800;
     font-style: italic;
     height: fit-content;
+    text-align: left;
 }
 
 .output span {
