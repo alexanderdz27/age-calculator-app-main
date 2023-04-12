@@ -45,9 +45,9 @@
                 <button class="sumbit_btn" onclick="calculate()"><img src="./assets/images/icon-arrow.svg" alt="icon"></button>
             </div>
             <div class="output">
-                <h1><span id="result3">-- years</span></h1>
-                <h1><span id="result2">-- months</span></h1>
-                <h1><span id="result1">-- days</span></h1>
+                <h1><span id="result3">-- </span>years</h1>
+                <h1><span id="result2">-- </span>months</h1>
+                <h1><span id="result1">-- </span>days</h1>
             </div>
 
             <script>
@@ -70,126 +70,126 @@
                             if (month == 2) {
                                 if (year % 4 == 0) {
                                     if (day > 29) {
-                                        document.getElementById("result1").innerHTML = "-- days";
+                                        document.getElementById("result1").innerHTML = "--";
                                         document.getElementById("err1").innerHTML = "<span style='color: red;'>Must be a valid day</span>";
                                         if (month >= 1 && month <= 12) {
-                                            document.getElementById("result2").innerHTML = months + 1 + " months";
+                                            document.getElementById("result2").innerHTML = months + 1;
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         } else {
-                                            document.getElementById("result2").innerHTML = "-- months";
+                                            document.getElementById("result2").innerHTML = "--";
                                             document.getElementById("err2").innerHTML = "<span style='color: red;'>Must be a valid month</span>";
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         }
                                     } else {
-                                        document.getElementById("result1").innerHTML = days + " days";
+                                        document.getElementById("result1").innerHTML = days;
                                         if (month >= 1 && month <= 12) {
-                                            document.getElementById("result2").innerHTML = months + 1 + " months";
+                                            document.getElementById("result2").innerHTML = months + 1;
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         } else {
-                                            document.getElementById("result2").innerHTML = "-- months";
+                                            document.getElementById("result2").innerHTML = "--";
                                             document.getElementById("err2").innerHTML = "<span style='color: red;'>Must be a valid month</span>";
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         }
                                     }
                                 } else if (year % 4 != 0) {
                                     if (day > 28) {
-                                        document.getElementById("result1").innerHTML = "-- days";
+                                        document.getElementById("result1").innerHTML = "--";
                                         document.getElementById("err1").innerHTML = "<span style='color: red;'>Must be a valid day</span>";
                                         if (month >= 1 && month <= 12) {
-                                            document.getElementById("result2").innerHTML = months + 1 + " months";
+                                            document.getElementById("result2").innerHTML = months + 1;
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         } else {
-                                            document.getElementById("result2").innerHTML = "-- months";
+                                            document.getElementById("result2").innerHTML = "--";
                                             document.getElementById("err2").innerHTML = "<span style='color: red;'>Must be a valid month</span>";
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         }
                                     } else {
-                                        document.getElementById("result1").innerHTML = days + " days";
+                                        document.getElementById("result1").innerHTML = days;
                                         if (month >= 1 && month <= 12) {
-                                            document.getElementById("result2").innerHTML = months + 1 + " months";
+                                            document.getElementById("result2").innerHTML = months + 1;
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         } else {
-                                            document.getElementById("result2").innerHTML = "-- months";
+                                            document.getElementById("result2").innerHTML = "--";
                                             document.getElementById("err2").innerHTML = "<span style='color: red;'>Must be a valid month</span>";
                                             if (year == "") {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                                document.getElementById("result3").innerHTML = "0 years";
+                                                document.getElementById("result3").innerHTML = "0";
                                             } else if (years >= 0) {
-                                                document.getElementById("result3").innerHTML = years + " years";
+                                                document.getElementById("result3").innerHTML = years;
                                             } else {
-                                                document.getElementById("result3").innerHTML = "-- years";
+                                                document.getElementById("result3").innerHTML = "--";
                                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                             }
                                         }
@@ -197,103 +197,103 @@
                                 }
 
                             } else {
-                                document.getElementById("result1").innerHTML = days + " days";
+                                document.getElementById("result1").innerHTML = days;
                                 if (month >= 1 && month <= 12 && year == currentDate.getFullYear()) {
-                                    document.getElementById("result2").innerHTML = currentDate.getMonth() - month + 1 + " months";
+                                    document.getElementById("result2").innerHTML = currentDate.getMonth() - month + 1;
                                     if (year == "") {
-                                        document.getElementById("result3").innerHTML = "-- years";
+                                        document.getElementById("result3").innerHTML = "--";
                                         document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                     } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                        document.getElementById("result3").innerHTML = "0 years";
+                                        document.getElementById("result3").innerHTML = "0";
                                     } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month == currentDate.getMonth()) {
-                                        document.getElementById("result3").innerHTML = "0 years";
+                                        document.getElementById("result3").innerHTML = "0";
                                     } else if (years >= 0) {
-                                        document.getElementById("result3").innerHTML = years + " years";
+                                        document.getElementById("result3").innerHTML = years;
                                     } else {
-                                        document.getElementById("result3").innerHTML = "-- years";
+                                        document.getElementById("result3").innerHTML = "--";
                                         document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                     }
                                 } else if (month >= 1 && month <= 12) {
-                                    document.getElementById("result2").innerHTML = months + " months";
+                                    document.getElementById("result2").innerHTML = months;
                                     if (year == "") {
-                                        document.getElementById("result3").innerHTML = "-- years";
+                                        document.getElementById("result3").innerHTML = "--";
                                         document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                     } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                        document.getElementById("result3").innerHTML = "0 years";
+                                        document.getElementById("result3").innerHTML = "0";
                                     } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month == currentDate.getMonth()) {
-                                        document.getElementById("result3").innerHTML = "0 years";
+                                        document.getElementById("result3").innerHTML = "0";
                                     } else if (years >= 0) {
-                                        document.getElementById("result3").innerHTML = years + " years";
+                                        document.getElementById("result3").innerHTML = years;
                                     } else {
-                                        document.getElementById("result3").innerHTML = "-- years";
+                                        document.getElementById("result3").innerHTML = "--";
                                         document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                     }
                                 } else {
-                                    document.getElementById("result2").innerHTML = "-- months";
+                                    document.getElementById("result2").innerHTML = "--";
                                     document.getElementById("err2").innerHTML = "<span style='color: red;'>Must be a valid month</span>";
                                     if (year == "") {
-                                        document.getElementById("result3").innerHTML = "-- years";
+                                        document.getElementById("result3").innerHTML = "--";
                                         document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                     } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                        document.getElementById("result3").innerHTML = "0 years";
+                                        document.getElementById("result3").innerHTML = "0";
                                     } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month == currentDate.getMonth()) {
-                                        document.getElementById("result3").innerHTML = "0 years";
+                                        document.getElementById("result3").innerHTML = "0";
                                     } else if (years >= 0) {
-                                        document.getElementById("result3").innerHTML = years + " years";
+                                        document.getElementById("result3").innerHTML = years;
                                     } else {
-                                        document.getElementById("result3").innerHTML = "-- years";
+                                        document.getElementById("result3").innerHTML = "--";
                                         document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                                     }
                                 }
                             }
                         }
                     } else {
-                        document.getElementById("result1").innerHTML = "-- days";
+                        document.getElementById("result1").innerHTML = "--";
                         document.getElementById("err1").innerHTML = "<span style='color: red;'>Must be a valid day</span>";
                         if (month >= 1 && month <= 12 && year == currentDate.getFullYear()) {
-                            document.getElementById("result2").innerHTML = currentDate.getMonth() - month + 1 + " months";
+                            document.getElementById("result2").innerHTML = currentDate.getMonth() - month + 1;
                             if (year == "") {
-                                document.getElementById("result3").innerHTML = "-- years";
+                                document.getElementById("result3").innerHTML = "--";
                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                document.getElementById("result3").innerHTML = "0 years";
+                                document.getElementById("result3").innerHTML = "0";
                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month == currentDate.getMonth()) {
-                                document.getElementById("result3").innerHTML = "0 years";
+                                document.getElementById("result3").innerHTML = "0";
                             } else if (years >= 0) {
-                                document.getElementById("result3").innerHTML = years + " years";
+                                document.getElementById("result3").innerHTML = years;
                             } else {
-                                document.getElementById("result3").innerHTML = "-- years";
+                                document.getElementById("result3").innerHTML = "--";
                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                             }
                         } else if (month >= 1 && month <= 12) {
-                            document.getElementById("result2").innerHTML = months + " months";
+                            document.getElementById("result2").innerHTML = months;
                             if (year == "") {
-                                document.getElementById("result3").innerHTML = "-- years";
+                                document.getElementById("result3").innerHTML = "--";
                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                document.getElementById("result3").innerHTML = "0 years";
+                                document.getElementById("result3").innerHTML = "0";
                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month == currentDate.getMonth()) {
-                                document.getElementById("result3").innerHTML = "0 years";
+                                document.getElementById("result3").innerHTML = "0";
                             } else if (years >= 0) {
-                                document.getElementById("result3").innerHTML = years + " years";
+                                document.getElementById("result3").innerHTML = years;
                             } else {
-                                document.getElementById("result3").innerHTML = "-- years";
+                                document.getElementById("result3").innerHTML = "--";
                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                             }
                         } else {
-                            document.getElementById("result2").innerHTML = "-- months";
+                            document.getElementById("result2").innerHTML = "--";
                             document.getElementById("err2").innerHTML = "<span style='color: red;'>Must be a valid month</span>";
                             if (year == "") {
-                                document.getElementById("result3").innerHTML = "-- years";
+                                document.getElementById("result3").innerHTML = "--";
                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month <= currentDate.getMonth()) {
-                                document.getElementById("result3").innerHTML = "0 years";
+                                document.getElementById("result3").innerHTML = "0";
                             } else if (year == currentDate.getFullYear() && day <= currentDate.getDate() && month == currentDate.getMonth()) {
-                                document.getElementById("result3").innerHTML = "0 years";
+                                document.getElementById("result3").innerHTML = "0";
                             } else if (years >= 0) {
-                                document.getElementById("result3").innerHTML = years + " years";
+                                document.getElementById("result3").innerHTML = years;
                             } else {
-                                document.getElementById("result3").innerHTML = "-- years";
+                                document.getElementById("result3").innerHTML = "--";
                                 document.getElementById("err3").innerHTML = "<span style='color: red;'>Must be a valid year</span> ";
                             }
                         }
